@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Perky Quotes</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css"/>
+</head>
+<body>
+</body>
+<body>
+	<p/>
+	<table border="0" cellspacing="1" cellpadding="5" bgcolor="#CCCCCC" width="50%">
+	<tr bgcolor="#407BA8">
+		<td style="color: #ffffff; font-weight: bold;">{{category1.title}}</td>
+	</tr>
+	{% if accounts1 %}
+	{% for acct in accounts1 %}
+		<tr style="background:#ffffff" onMouseOver="this.style.background='#eeeeee';" onMouseOut="this.style.background='#ffffff';">
+			<td>{{ acct.title }}</a></td>
+		</tr>
+	{% endfor %}
+	{% else %}
+	<span class="heading">No matching accounts found.</span>
+	{% endif %}
+
+	</table>
+	<p/>
+</body>
+</html>
+
